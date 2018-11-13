@@ -1,24 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Location-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="Location" customModule="Weather" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="moon-tumblr-backgrounds-google-da-ara-jhjkj-pinterest-2k-backgrounds.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="i2f-X2-m47">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scottsdale, AZ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GD7-jh-P1V">
+                                <rect key="frame" x="16" y="44" width="343" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0 F / 0.0 C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qum-4J-YeF">
+                                <rect key="frame" x="16" y="216" width="343" height="28"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunny" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bp1-7k-lJd">
+                                <rect key="frame" x="16" y="252" width="343" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0, 0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lmp-vC-vfI">
+                                <rect key="frame" x="16" y="761" width="343" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="JmN-3S-Rvc"/>
+                                    <constraint firstAttribute="height" constant="17" id="o0z-af-5sQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coordinates" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wkq-Ov-KKL">
+                                <rect key="frame" x="143" y="732" width="89" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qum-4J-YeF" firstAttribute="top" secondItem="GD7-jh-P1V" secondAttribute="bottom" constant="152" id="01V-2L-ZkG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qum-4J-YeF" secondAttribute="trailing" constant="16" id="6qg-Ej-7m6"/>
+                            <constraint firstItem="i2f-X2-m47" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ber-W4-dIP"/>
+                            <constraint firstItem="bp1-7k-lJd" firstAttribute="top" secondItem="qum-4J-YeF" secondAttribute="bottom" constant="8" id="Bsb-2o-BfH"/>
+                            <constraint firstItem="wkq-Ov-KKL" firstAttribute="centerX" secondItem="lmp-vC-vfI" secondAttribute="centerX" id="DNg-5n-wJN"/>
+                            <constraint firstAttribute="bottom" secondItem="i2f-X2-m47" secondAttribute="bottom" id="KZR-7V-am5"/>
+                            <constraint firstItem="lmp-vC-vfI" firstAttribute="top" secondItem="wkq-Ov-KKL" secondAttribute="bottom" constant="8" symbolic="YES" id="Kst-kH-HkJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GD7-jh-P1V" secondAttribute="trailing" constant="16" id="QxM-ah-qg2"/>
+                            <constraint firstItem="GD7-jh-P1V" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ZNH-R3-ivA"/>
+                            <constraint firstItem="i2f-X2-m47" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="alj-rI-ECf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lmp-vC-vfI" secondAttribute="trailing" constant="16" id="dTs-n3-x1I"/>
+                            <constraint firstItem="lmp-vC-vfI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="iel-ij-E2p"/>
+                            <constraint firstItem="GD7-jh-P1V" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="jAd-m8-2Pb"/>
+                            <constraint firstItem="qum-4J-YeF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="kYM-ql-0uY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bp1-7k-lJd" secondAttribute="trailing" constant="16" id="qgY-AB-SAC"/>
+                            <constraint firstItem="i2f-X2-m47" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="sDH-Bd-bkq"/>
+                            <constraint firstItem="lmp-vC-vfI" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="tKh-zk-YoV"/>
+                            <constraint firstItem="bp1-7k-lJd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="y2f-cD-Jpx"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="coordinateLabel" destination="lmp-vC-vfI" id="q2L-7g-hYH"/>
+                        <outlet property="degreeLabel" destination="qum-4J-YeF" id="a4F-Ra-2LE"/>
+                        <outlet property="locationLabel" destination="GD7-jh-P1V" id="DJN-ee-BNe"/>
+                        <outlet property="overcastLabel" destination="bp1-7k-lJd" id="pSm-9e-dIE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="61.600000000000001" y="22.906403940886701"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="moon-tumblr-backgrounds-google-da-ara-jhjkj-pinterest-2k-backgrounds.jpg" width="640" height="954"/>
+    </resources>
 </document>

@@ -7,23 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A3C449B2198D29D008D668F /* moon-tumblr-backgrounds-google-da-ara-jhjkj-pinterest-2k-backgrounds.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6A3C449A2198D29C008D668F /* moon-tumblr-backgrounds-google-da-ara-jhjkj-pinterest-2k-backgrounds.jpg */; };
 		6AA98F3321962468008A769B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA98F3221962468008A769B /* AppDelegate.swift */; };
-		6AA98F3521962468008A769B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA98F3421962468008A769B /* ViewController.swift */; };
 		6AA98F3821962468008A769B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AA98F3621962468008A769B /* Main.storyboard */; };
 		6AA98F3B21962468008A769B /* Weather.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6AA98F3921962468008A769B /* Weather.xcdatamodeld */; };
 		6AA98F3D2196246A008A769B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AA98F3C2196246A008A769B /* Assets.xcassets */; };
 		6AA98F402196246A008A769B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AA98F3E2196246A008A769B /* LaunchScreen.storyboard */; };
+		6AA98F4B21962829008A769B /* 646383.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6AA98F4A21962829008A769B /* 646383.jpg */; };
+		6AA98F4D21962A64008A769B /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA98F4C21962A64008A769B /* Location.swift */; };
+		6AA98F4F21963A22008A769B /* AdobeStock_61034230.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6AA98F4E21963A1E008A769B /* AdobeStock_61034230.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6A3C449A2198D29C008D668F /* moon-tumblr-backgrounds-google-da-ara-jhjkj-pinterest-2k-backgrounds.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "moon-tumblr-backgrounds-google-da-ara-jhjkj-pinterest-2k-backgrounds.jpg"; sourceTree = "<group>"; };
 		6AA98F2F21962468008A769B /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AA98F3221962468008A769B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6AA98F3421962468008A769B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6AA98F3721962468008A769B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6AA98F3A21962468008A769B /* Weather.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Weather.xcdatamodel; sourceTree = "<group>"; };
 		6AA98F3C2196246A008A769B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6AA98F3F2196246A008A769B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6AA98F412196246A008A769B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AA98F4A21962829008A769B /* 646383.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 646383.jpg; sourceTree = "<group>"; };
+		6AA98F4C21962A64008A769B /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		6AA98F4E21963A1E008A769B /* AdobeStock_61034230.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = AdobeStock_61034230.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +63,25 @@
 			isa = PBXGroup;
 			children = (
 				6AA98F3221962468008A769B /* AppDelegate.swift */,
-				6AA98F3421962468008A769B /* ViewController.swift */,
 				6AA98F3621962468008A769B /* Main.storyboard */,
+				6AA98F4C21962A64008A769B /* Location.swift */,
 				6AA98F3C2196246A008A769B /* Assets.xcassets */,
 				6AA98F3E2196246A008A769B /* LaunchScreen.storyboard */,
+				6AA98F492196267C008A769B /* Photos */,
 				6AA98F412196246A008A769B /* Info.plist */,
 				6AA98F3921962468008A769B /* Weather.xcdatamodeld */,
 			);
 			path = Weather;
+			sourceTree = "<group>";
+		};
+		6AA98F492196267C008A769B /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				6A3C449A2198D29C008D668F /* moon-tumblr-backgrounds-google-da-ara-jhjkj-pinterest-2k-backgrounds.jpg */,
+				6AA98F4A21962829008A769B /* 646383.jpg */,
+				6AA98F4E21963A1E008A769B /* AdobeStock_61034230.jpeg */,
+			);
+			path = Photos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +142,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AA98F4F21963A22008A769B /* AdobeStock_61034230.jpeg in Resources */,
+				6AA98F4B21962829008A769B /* 646383.jpg in Resources */,
 				6AA98F402196246A008A769B /* LaunchScreen.storyboard in Resources */,
 				6AA98F3D2196246A008A769B /* Assets.xcassets in Resources */,
 				6AA98F3821962468008A769B /* Main.storyboard in Resources */,
+				6A3C449B2198D29D008D668F /* moon-tumblr-backgrounds-google-da-ara-jhjkj-pinterest-2k-backgrounds.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6AA98F3B21962468008A769B /* Weather.xcdatamodeld in Sources */,
-				6AA98F3521962468008A769B /* ViewController.swift in Sources */,
+				6AA98F4D21962A64008A769B /* Location.swift in Sources */,
 				6AA98F3321962468008A769B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,7 +307,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J9S8P7XX49;
 				INFOPLIST_FILE = Weather/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -295,7 +317,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.NolanFuchs.Weather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -304,7 +326,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J9S8P7XX49;
 				INFOPLIST_FILE = Weather/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +336,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.NolanFuchs.Weather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
