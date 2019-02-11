@@ -3,6 +3,7 @@ An app that tracks exact location coordinates and pulls weather data from OpenWe
 
 ## What I Learned
 * Configured "Location Manager" in order to get real time current locations
+* Updating the API based on coordinate location rather than city location for accuracy 
 * Used JSON in order to parse out all information from the OpenWeatherMapAPI
 * Configured decodable protocols to use JSON 
 
