@@ -8,4 +8,4 @@ An app that tracks exact location coordinates and pulls weather data from OpenWe
 *
 
 ## Project Demo
-<img src="https://github.com/favicon.ico" height="250" width="100">
+<img src="Weather/Screenshot 1.png" height="250" width="100">
