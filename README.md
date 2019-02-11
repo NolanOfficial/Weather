@@ -8,4 +8,4 @@ An app that tracks exact location coordinates and pulls weather data from OpenWe
 *
 
 ## Project Demo
-<img src="https://github.com/NolanOfficial/Weather/blob/master/Screenshot%201.png" height="500" width="300">
+<img src="https://github.com/NolanOfficial/Weather/blob/master/Screenshot%201.png" height="600" width="300">
